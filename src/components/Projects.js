@@ -23,7 +23,7 @@ const ProjectList = [
         description: [`A recipe book app for saving and calculating costs of a recipe.`,
             `The app is built in TypeScript with React, Redux, Node, Express, MongoDB and deployed on DigitalOcean.`],
         img: 'https://via.placeholder.com/300',
-        url: 'https://www.panela.app'
+        url: 'https://panela.app'
     },
     {
         id: 2,
