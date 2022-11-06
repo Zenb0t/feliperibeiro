@@ -4,7 +4,6 @@ import {
     VStack,
     useBreakpointValue,
     useColorModeValue,
-    Stack,
     Heading,
     Link,
     Image,
