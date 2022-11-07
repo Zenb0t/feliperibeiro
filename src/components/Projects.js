@@ -16,7 +16,7 @@ import {
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import chameleonImg from '../assets/chameleon_website.png';
 import panela from '../assets/panela.png';
-import terminalImg from '../assets/terminal.jpg';
+import terminalImg from '../assets/Terminal.jpg';
 
 const ProjectList = [
     {
