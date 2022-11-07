@@ -15,8 +15,8 @@ import {
 } from '@chakra-ui/react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import chameleonImg from '../assets/chameleon_website.png';
-import terminal from '../assets/terminal.jpg';
-import panela from '../assets/panela.jpg';
+import panela from '../assets/panela.png';
+import terminalImg from '../assets/terminal.jpg';
 
 const ProjectList = [
     {
@@ -40,7 +40,7 @@ const ProjectList = [
         name: 'Books Manager',
         description: ['Built a full cli and GUI for a book management system in pure Java.',
             'Designed and built using Database Accessor Objects, querying in SQL a MySQL database. It features a series of reports on the different objects'],
-        img:  terminal,
+        img:  terminalImg,
         url: 'https://github.com/Zenb0t/booksmana'
     },
 ];
