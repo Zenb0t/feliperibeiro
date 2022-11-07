@@ -15,6 +15,8 @@ import {
 } from '@chakra-ui/react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import chameleonImg from '../assets/chameleon_website.png';
+import terminal from '../assets/terminal.jpg';
+import panela from '../assets/panela.jpg';
 
 const ProjectList = [
     {
@@ -22,7 +24,7 @@ const ProjectList = [
         name: 'Panela App',
         description: [`A recipe book app for saving and calculating costs of a recipe.`,
             `The app is built in TypeScript with React, Redux, Node, Express, MongoDB and deployed on DigitalOcean.`],
-        img: 'https://via.placeholder.com/300',
+        img: panela,
         url: 'https://panela.app'
     },
     {
@@ -32,6 +34,14 @@ const ProjectList = [
             'Designed and built the website using Squarespace, according to the client’s specifications.'],
         img:  chameleonImg,
         url: 'https://www.chameleonshades.ca'
+    },
+    {
+        id: 3,
+        name: 'Books Manager',
+        description: ['Built a full cli and GUI for a book management system in pure Java.',
+            'Designed and built using Database Accessor Objects, querying in SQL a MySQL database. It features a series of reports on the different objects'],
+        img:  terminal,
+        url: 'https://github.com/Zenb0t/booksmana'
     },
 ];
 
