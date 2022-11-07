@@ -108,7 +108,7 @@ export default function ContactForm() {
                                         isRound
                                     />
                                 </Tooltip>
-                                <Link href="#">
+                                <Link href="https://github.com/Zenb0t">
                                     <IconButton
                                         aria-label="github"
                                         variant="ghost"
@@ -122,7 +122,7 @@ export default function ContactForm() {
                                         isRound
                                     />
                                 </Link>
-                                <Link href="#">
+                                <Link href="https://www.linkedin.com/in/felipe-ribeiro-245a37192/">
                                     <IconButton
                                         aria-label="linkedin"
                                         variant="ghost"
