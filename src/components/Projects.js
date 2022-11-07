@@ -59,7 +59,7 @@ const ProjectItem = ({ img, name, description, url }) => {
                 pb={4}
             >
                 <VStack w={'300px'} justifyContent='flex-start' alignSelf='flex-start'>
-                    <Image src={img} alt={name} boxSize='300px' />
+                    <Image src={img} alt={name} boxSize='300px' objectFit={"cover"} />
                     <Heading as='h3' size='lg' pt={4}>
                         {name}
                     </Heading>
