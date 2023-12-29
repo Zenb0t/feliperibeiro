@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Divider,
-  theme,
-} from '@chakra-ui/react';
+import { Center, ChakraProvider, Divider, theme } from '@chakra-ui/react';
 import HeroWithBackgroundImage from './components/Hero';
 import Navigation from './components/Nav';
 import AboutMe from './components/About';
@@ -14,12 +10,16 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navigation />
-      <HeroWithBackgroundImage id='home' />
+      <HeroWithBackgroundImage id="home" />
       <AboutMe />
-      <Divider />
+      <Center px={8}>
+        <Divider />
+      </Center>
       <Projects />
-      <Divider />
-      <ContactForm/>
+      <Center px={8}>
+        <Divider />
+      </Center>
+      <ContactForm />
     </ChakraProvider>
   );
 }

@@ -22,7 +22,7 @@ const ProjectList = [
     {
         id: 1,
         name: 'Panela App',
-        description: [`A recipe book app for saving and calculating costs of a recipe.`,
+        description: [`A SaaS app for managing recipes and costs.`,
             `The app is built in TypeScript with React, Redux, Node, Express, MongoDB and deployed on DigitalOcean.`],
         img: panela,
         url: 'https://panela.app'
@@ -68,7 +68,7 @@ const ProjectItem = ({ img, name, description, url }) => {
                     ))}
                     <Link py={4} href={url} isExternal>
                         <Button >
-                            {name} <Icon as={FaExternalLinkAlt} mx='2px' />
+                            {name} <Icon as={FaExternalLinkAlt} mx='8px' />
                         </Button>
                     </Link>
                 </VStack>
