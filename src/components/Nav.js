@@ -8,6 +8,7 @@ import {
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
+import { RiCodeBoxLine } from 'react-icons/ri';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { scrollToId } from '../utils';
@@ -61,7 +62,11 @@ export default function Navigation() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'lg'}
-            icon={isOpen ? <FaTimes /> : <FaBars />}
+            icon={
+              <Box display="flex" alignItems="center" justifyContent="center">
+                {isOpen ? <FaTimes /> : <FaBars />}
+              </Box>
+            }
             aria-label={'Open Menu'}
             display={{ base: 'inline', md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
@@ -73,6 +78,7 @@ export default function Navigation() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}
             >
+              <RiCodeBoxLine size={32} color="#FF8300" />
               <NavLinks onClose={onClose} />
             </HStack>
           </HStack>
