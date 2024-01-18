@@ -17,12 +17,13 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import chameleonImg from '../assets/chameleon_website.png';
 import panela from '../assets/panela.png';
 import terminalImg from '../assets/Terminal.jpg';
+import FlipCard from './FlipCard';
 
 const ProjectList = [
     {
         id: 1,
         name: 'Panela App',
-        description: [`A SaaS app for managing recipes and costs.`,
+        description: [`A SaaS app for managing recipes and costs, with a handy import recipe feature.`,
             `The app is built in TypeScript with React, Redux, Node, Express, MongoDB and deployed on DigitalOcean.`],
         img: panela,
         url: 'https://panela.app'
@@ -38,8 +39,8 @@ const ProjectList = [
     {
         id: 3,
         name: 'Books Manager',
-        description: ['Built a full cli and GUI for a book management system in pure Java.',
-            'Designed and built using Database Accessor Objects, querying in SQL a MySQL database. It features a series of reports on the different objects'],
+        description: ['Built a full cli and GUI for a book management system in pure Java. It features a series of reports on the different objects',
+            'Created using best practices and design patterns such as MVC, DAO, and Singleton.'],
         img:  terminalImg,
         url: 'https://github.com/Zenb0t/booksmana'
     },
@@ -75,6 +76,13 @@ const ProjectItem = ({ img, name, description, url }) => {
             </Box>
         </WrapItem>
     )
+}
+
+const ProjectCard = ({ img, name, description, url }) => {
+
+    let testContent = <ProjectItem img={img} name={name} description={description} url={url} />
+
+    return <FlipCard frontContent={testContent} backContent={testContent} />
 }
 
 export default function Projects() {
