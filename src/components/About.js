@@ -33,12 +33,12 @@ export default function AboutMe() {
             color={useColorModeValue('black', 'white')}
             fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}
           >
-            I'm Felipe Ribeiro, a Vancouver-based software developer with a knack
-            for crafting mobile and web applications that address real-world
-            problems. My coding approach is simple: clean, efficient, and
-            value-driven. Transitioning from a business background, I bring a
-            unique perspective to tech, blending strategic planning with
-            technical problem-solving.
+            My name is Felipe Ribeiro, and I'm a software developer with a
+            passion for crafting applications that address real-world problems.
+            My coding approach is simple: clean, efficient, and value-driven.
+            Transitioning from a business background, I bring a unique
+            perspective to tech, blending strategic planning with technical
+            problem-solving.
           </Text>
           <Text
             color={useColorModeValue('black', 'white')}
@@ -54,9 +54,9 @@ export default function AboutMe() {
             fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}
           >
             Outside of work, I'm usually exploring BC's trails, playing guitar,
-            or diving into the latest in physics, AI and quantum computing. I
-            cherish time with my family and believe in balancing hard work with
-            moments that inspire.
+            or diving into the latest in physics, AI, gastronomy and quantum
+            computing. I cherish time with my family and believe in balancing
+            hard work with moments that inspire.
           </Text>
           <Text
             color={useColorModeValue('black', 'white')}
@@ -64,6 +64,11 @@ export default function AboutMe() {
           >
             I'm on the lookout for opportunities to collaborate and innovate,
             aiming to make technology that's as impactful as it is intelligent.
+            If you're interested in working together, please{' '}
+            <Link to="/contact" style={{ color: 'orange' }}>
+              reach out
+            </Link>
+            !
           </Text>
           <HStack py={8} alignSelf={'center'} spacing={8}>
             {/* <Tooltip label="My Resume" aria-label='PDF Resume'>
