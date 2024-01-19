@@ -78,12 +78,12 @@ const ProjectItem = ({ img, name, description, url }) => {
     )
 }
 
-const ProjectCard = ({ img, name, description, url }) => {
+// const ProjectCard = ({ img, name, description, url }) => {
 
-    let testContent = <ProjectItem img={img} name={name} description={description} url={url} />
+//     let testContent = <ProjectItem img={img} name={name} description={description} url={url} />
 
-    return <FlipCard frontContent={testContent} backContent={testContent} />
-}
+//     return <FlipCard frontContent={testContent} backContent={testContent} />
+// }
 
 export default function Projects() {
     return (

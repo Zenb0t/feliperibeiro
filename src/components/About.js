@@ -12,6 +12,24 @@ import {
   Tooltip,
 } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { scrollToId } from '../utils';
+
+const LinkWrapper = ({ href, id, text, ...props }) => {
+    const handleClick = e => {
+      e.preventDefault();
+      scrollToId(id);
+    };
+
+    return (
+      <Link
+        href={href}
+        onClick={handleClick}
+        {...props}
+      >
+        {text}
+      </Link>
+    );
+  };
 
 export default function AboutMe() {
   return (
@@ -65,9 +83,7 @@ export default function AboutMe() {
             I'm on the lookout for opportunities to collaborate and innovate,
             aiming to make technology that's as impactful as it is intelligent.
             If you're interested in working together, please{' '}
-            <Link to="/contact" style={{ color: 'orange' }}>
-              reach out
-            </Link>
+            <LinkWrapper href="#contact" id="contact" style={{ color: 'orange' }} text={"reach out"}/>
             !
           </Text>
           <HStack py={8} alignSelf={'center'} spacing={8}>
