@@ -156,34 +156,25 @@ const ProjectCard = ({ img, name, description, url, onClick }) => {
 };
 
 const GalleryModal = ({ isOpen, onClose, images }) => {
+
   return (
     // Add a box to hold the modal and ensure it spans the full width of the container
-    <Modal isOpen={isOpen} onClose={onClose} size={'full'}>
+    <Modal isOpen={isOpen} onClose={onClose} size={'6xl'}>
       <ModalOverlay />
       <ModalContent>
         <ModalHeader>Gallery</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <ChakraCarousel gap={32}>
-            {ProjectList[0].gallery?.images.map((img, index) => (
-              <Flex
-                w={'60dvw'}
-                h={'85vh'}
-                key={index}
-                justifyContent="space-between"
-                flexDirection="column"
-                overflow="hidden"
-                color="gray.300"
-                bg="base.d100"
-                rounded={5}
-                flex={1}
-                p={5}
-                // add a background image
-                bgImage={`url(${img})`}
-                bgSize={'cover'}
-                // offset the background image
-                bgPosition={'center'}
-              />
+            {images.map((img, index) => (
+                <Image
+                    pointerEvents={'none'}
+                    key={index}
+                    src={img}
+                    alt={`Gallery Image ${index}`}
+                    boxSize="100%"
+                    objectFit={'cover'}
+                />
             ))}
           </ChakraCarousel>
         </ModalBody>
